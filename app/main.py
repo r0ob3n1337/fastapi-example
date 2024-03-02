@@ -15,7 +15,7 @@ class SNums(BaseModel):
 @app.get("/")
 async def root():
     """Index root page"""
-    return FileResponse("./index.html")
+    return FileResponse("app/templates/index.html")
 
 
 @app.post("/calculate")
